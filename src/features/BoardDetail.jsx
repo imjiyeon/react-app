@@ -96,7 +96,10 @@ const BoardDetail = () => {
               <Form.Control type="text" value={board.modDate} readOnly/>
             </Form.Group>
 
-            <img src={ `${IMG_PATH}${board.imgPath}` }></img>
+            {
+              board.imgPath!==null && 
+              <img src={ `${IMG_PATH}${board.imgPath}` }></img>
+            }
 
             <Button variant="primary" onClick={ ()=>{
               navigate(`/board/modify/${board.no}`);
