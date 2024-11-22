@@ -35,7 +35,7 @@ let host;
 if(window.location.hostname === 'localhost'){
   host = 'http://localhost:8080';
 } else {
-  host = 'http://ec2-3-35-231-182.ap-northeast-2.compute.amazonaws.com:8080'
+  host = '/api';
 }
 
 console.log(host);
