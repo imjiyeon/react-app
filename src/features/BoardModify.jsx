@@ -86,7 +86,7 @@ const BoardModify = () => {
       board,
       {
         headers: {
-          Authorization: 'eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE5MDc3NzQsImV4cCI6MTczNDQ5OTc3NCwic3ViIjoidXNlciJ9._PmjmFnWl714POzg-5Js1fDznQt8cOUkBvgDcNnhqug'
+          Authorization: token
         }
       }
     );
@@ -108,7 +108,7 @@ const BoardModify = () => {
       `${host}/board/remove?no=${board.no}`,
       {
         headers: {
-          Authorization: 'eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE5MDc3NzQsImV4cCI6MTczNDQ5OTc3NCwic3ViIjoidXNlciJ9._PmjmFnWl714POzg-5Js1fDznQt8cOUkBvgDcNnhqug'
+          Authorization: token
         }
       }
     );
