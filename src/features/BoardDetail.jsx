@@ -98,7 +98,7 @@ const BoardDetail = () => {
 
             {
               board.imgPath!==null && 
-              <img src={ `${IMG_PATH}${board.imgPath}` }></img>
+              <img src={ board.imgPath }></img>
             }
 
             <Button variant="primary" onClick={ ()=>{
